@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Сброс*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Внешние блоки*/
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.25;
+  font-family: "FiraSansExtraCondensedRegular", sans-serif;
+  overflow-x: hidden;
+}
+
+.header__top {
+  background-image: url(../img/wall.jpg);
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+
+/*Компоненты*/
+.h-nav {
+  font-size: 0;
+}
+
+.h-nav__item {
+  display: inline-block;
+  padding-left: 38px;
+  padding-right: 35px;
+  position: relative;
+}
+
+.h-nav__item::before {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #ffcf7f;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.5px;
+}
+
+.h-nav__item:first-child {
+  padding-left: 0;
+}
+
+.h-nav__item:first-child::before {
+  display: none;
+}
+
+.h-nav__item:last-child {
+  padding-right: 0;
+}
+
+.h-nav__link {
+  display: block;
+  font-size: 19px;
+  color: #fff;
+  line-height: 50px;
+  position: relative;
+}
+
+.h-nav__link::after {
+  content: '';
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.h-nav__link:hover {
+  text-decoration: none;
+  color: #ffcf7f;
+}
+
+.h-nav__link:hover::after {
+  background-color: #ffcf7f;
+}
+
+.h-nav .active .h-nav__link {
+  text-decoration: none;
+  color: #ffcf7f;
+}
+
+.h-nav .active .h-nav__link::after {
+  background-color: #ffcf7f;
+}
+
+.h-text {
+  font-size: 19px;
+  color: #000;
+  line-height: 22px;
+  display: block;
+}
+
+.h-phone {
+  color: #ba2e17;
+  font-size: 21px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.h-phone span {
+  font-size: 29px;
+  color: #000;
+}
+
+.h-phone svg {
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -18px;
+}
+
+.h-phone:hover {
+  text-decoration: none;
+  color: #ba2e17;
+}
+
+.h-serach {
+  padding-top: 25px;
+}
