@@ -15,3 +15,15 @@
   font-family: "FiraSansExtraCondensedBold";
   src: url("../fonts/FiraSansExtraCondensed/FiraSansExtraCondensed-Bold.ttf");
 }
+
+/* font-family: "FiraSansExtraCondensedMedium" */
+@font-face {
+  font-family: "FiraSansExtraCondensedMedium";
+  src: url("../fonts/FiraSansExtraCondensed/FiraSansExtraCondensed-Medium.ttf");
+}
+
+/* font-family: "FiraSansExtraCondensedLight" */
+@font-face {
+  font-family: "FiraSansExtraCondensedLight";
+  src: url("../fonts/FiraSansExtraCondensed/FiraSansExtraCondensed-Light.ttf");
+}

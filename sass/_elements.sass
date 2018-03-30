@@ -76,5 +76,236 @@
 		text-decoration: none
 		color: #ba2e17
 
-.h-serach
-	padding-top: 25px
+.h-search
+	margin-top: 25px
+	position: relative
+	&__input
+		width: 100%
+		height: 47px
+		background-color: #e7ddcc
+		line-height: 37px
+		border: none
+		border-radius: 3px
+		padding-left: 18px
+		padding-right: 54px
+		color: #000
+		font-size: 19px
+		text-align: left
+		&::-webkit-input-placeholder
+			opacity: 1
+			color: #000
+		&::-moz-placeholder
+			opacity: 1
+			color: #000
+		&:-moz-placeholder
+			opacity: 1
+			color: #000
+		&:-ms-input-placeholder
+			opacity: 1
+			color: #000
+	&__btn
+		position: absolute
+		right: 0
+		top: 0
+		width: 54px
+		bottom: 0
+		border: none
+		background-color: transparent
+		padding: 4px 0 0 0 
+		svg
+			fill: #D02028
+			width: 31px
+		&:hover
+			svg
+				opacity: .8
+
+.h-catnav
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 39.5px
+		padding-left: 37px
+		position: relative
+		margin-bottom: 9px
+		margin-top: 9px
+		&::after
+			content: ''
+			display: block
+			width: 3px
+			height: 3px
+			background-color: #bea38e
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -1.5px
+	&__link
+		color: #000
+		font-size: 20px
+		line-height: 50px
+		line-height: 32px
+		display: block
+		border-bottom: 3px solid transparent
+		&:hover
+			text-decoration: none
+			color: #ba2e17
+			border-bottom-color: #ba2e17
+		&:focus, &:active
+			text-decoration: none
+			color: #000
+	.active
+		.h-catnav__link
+			text-decoration: none
+			color: #ba2e17
+			border-bottom-color: #ba2e17
+
+.p-indexslider
+	&__item
+		position: relative
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			z-index: 1
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background-image: url(../img/slider-patern.png)
+			background-repeat: repeat
+			background-position: 0 0
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__text
+		position: absolute
+		z-index: 2
+		display: block
+		top: 50%
+		left: 0
+		right: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		h2
+			color: #fff
+			font-size: 50px
+			line-height: 60px
+			font-family: "FiraSansExtraCondensedMedium", sans-serif
+			text-transform: uppercase
+			text-align: center
+
+.p-offers
+	display: block
+	&__top
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__text
+		display: block
+		text-align: center
+		height: 96px
+		position: relative
+		overflow: hidden
+	&__title
+		color: #000
+		text-transform: uppercase
+		font-size: 26px
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&:hover
+		text-decoration: none
+		.p-offers__top
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+			-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+		.p-offers__title
+			color: #ba2e17
+			text-decoration: none
+	&:focus, &:active
+		text-decoration: none
+		.p-offers__title
+			text-decoration: none
+			color: #000
+
+.p-title
+	display: inline-block
+	font-size: 40px
+	color: #ba2e17
+	font-family: "FiraSansExtraCondensedLight", sans-serif
+	text-transform: uppercase
+
+.p-description
+	font-size: 19px
+	color: #000
+	line-height: 27px
+	p
+		padding-bottom: 25px
+	ul
+		li
+			display: block
+			padding-left: 32px
+			padding-bottom: 20px
+			position: relative
+			&::before
+				content: ''
+				width: 18px
+				height: 18px
+				display: block
+				position: absolute
+				left: 0
+				top: 5px
+				background-image: url(../img/p-list.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: cover
+			&:last-child
+				padding-bottom: 0
+
+.p-img
+	img
+		display: block
+		width: 100%
+		height: auto
+
+.p-ourprod
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	&__item
+		width: 25%
+		background-repeat: no-repeat
+		background-size: cover
+		overflow: hidden
+	&__link
+		display: block
+		width: 100%
+		height: 100%
+		position: relative
+		background-image: url(../img/no-hover.png)
+		background-repeat: repeat-x
+		background-position: left bottom
+		span
+			color: #fff
+			position: absolute
+			z-index: 10
+			left: 0
+			right: 0
+			top: 100%
+			margin-top: -75px
+			text-transform: uppercase
+			font-size: 28px
+			line-height: 32px
+			text-align: center
+		&:hover
+			background-image: url(../img/yes-hover.png)

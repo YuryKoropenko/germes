@@ -29,3 +29,40 @@ ol, ul
 
 .hidden
 	display: none
+
+.owl-nav
+	button
+		width: 18px
+		height: 35px
+		text-indent: -9999px
+		background-image: url(../img/slider-arrow.png) !important
+		background-repeat: no-repeat !important
+		position: absolute
+		top: 50%
+		margin-top: -17.5px
+		z-index: 10
+.owl-prev
+	background-position: left center !important
+	left: 20%
+.owl-next
+	background-position: right center !important
+	right: 20%
+
+.owl-dots
+	position: absolute
+	bottom: 22px
+	left: 0
+	right: 0
+	text-align: center
+	font-size: 0
+	.owl-dot
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		border: 2px solid #fff !important
+		display: inline-block
+		margin: 0 2.5px
+		background-color: transparent
+	.active
+		border-color: #ce031b !important
+		background-color: #ce031b !important
