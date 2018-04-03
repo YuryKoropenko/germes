@@ -45,12 +45,69 @@ body
 		margin-bottom: 90px
 		&-ques
 			padding-bottom: 87px
+		&-top
+			background-color: #fff
+			padding: 40px 0
+		&-sort
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: top center
+			padding: 22px 0
+		&-prods
+			background-color: #fff
+			padding-top: 77px
+		&-ab
+			padding-top: 65px
+			padding-bottom: 70px
 	&__p-questitle
 		text-align: center
 		padding-bottom: 35px
 	&__p-quesform
 		width: 526px
 		margin: 0 auto
+	&__p-path
+		text-align: center
+		padding-bottom: 22px
+	&__p-bigtitle
+		text-align: center
+	&__p-sort
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	&__p-prod
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+	&__p-content
+		&-right
+			padding-left: 30px
+		h2
+			color: #ba2e17
+			font-size: 40px
+			display: block
+			text-transform: uppercase
+			font-weight: normal
+			font-family: "FiraSansExtraCondensedLight", sans-serif
+		p
+			font-size: 19px
+			line-height: 27px
+			color: #000
+
+.p-sort
+	&__vid
+		@include clearfix
+		.p-select__label
+			float: left
+			display: block
 
 .footer
 	background-repeat: no-repeat

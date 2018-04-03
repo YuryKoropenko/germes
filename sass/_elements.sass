@@ -385,12 +385,17 @@
 		border: 1px solid #ba2e17
 		text-transform: uppercase
 		background-color: #ba2e17
-		line-height: 30px
+		line-height: 31px
 		font-size: 22px
 		color: #fff
 		&:hover
 			background-color: transparent
 			color: #ba2e17
+			text-decoration: none
+		&:focus, &:active
+			background-color: #ba2e17
+			color: #fff
+			text-decoration: none
 	&__info
 		padding-top: 38px
 		display: block
@@ -486,3 +491,207 @@
 
 .no-scroll
 	overflow: hidden
+
+.p-path
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 16px
+		position: relative
+		&:last-child
+			padding-right: 0
+			&::after
+				display: none !important
+		&::after
+			content: '/'
+			font-size: 16px
+			color: #000
+			display: block
+			position: absolute
+			width: 16px
+			right: 0
+			top: 50%
+			text-align: center
+			transform: translateY(-50%)
+	&__link
+		color: #000
+		font-size: 16px
+		line-height: 18px
+	&__last
+		color: #000
+		font-size: 16px
+		line-height: 18px
+
+.p-bigtitle
+	text-transform: uppercase
+	display: inline-block
+	color: #ba2e17
+	font-size: 36px
+	font-weight: normal
+	font-family: "FiraSansExtraCondensedLight", sans-serif
+
+.p-search
+	width: 318px
+	margin-top: 0
+	.h-search__input
+		background-color: #fff
+		height: 38px
+	svg
+		fill: #7d481e
+
+.p-select
+	&__label
+		color: #fff
+		font-size: 19px
+		line-height: 38px
+		display: inline-block
+		margin-right: 24px
+
+.p-pagin
+	font-size: 0
+	padding-top: 9px
+	&__link
+		font-size: 19px
+		color: #fff
+		width: 16px
+		display: block
+		text-align: center
+		&:hover
+			text-decoration: none
+			color: #fff
+			opacity: 0.8
+		&:focus, &:active
+			text-decoration: none
+			color: #fff
+		svg
+			display: block
+			fill: #fff
+			width: 19px
+	&__item
+		display: inline-block
+		&-left
+			.p-pagin__link
+				width: 20px
+				height: 16px
+				padding-top: 3px
+				svg
+					transform: rotate(90deg)
+					-webkit-transform: rotate(90deg)
+		&-right
+			.p-pagin__link
+				width: 20px
+				height: 16px
+				padding-top: 3px
+				svg
+					transform: rotate(-90deg)
+					-webkit-transform: rotate(-90deg)
+
+.p-vid
+	display: inline-block
+	display: block
+	float: left
+	padding-top: 11px
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 10px
+		&:last-child
+			padding-right: 0
+	&__link
+		display: block
+		svg
+			height: 15px
+			fill: #fff
+
+.p-prod
+	@include clearfix
+	margin-bottom: 77px
+	width: 530px
+	&__left
+		width: 40%
+		float: left
+		padding-right: 10px
+	&__atr
+		color: #7d481e
+		font-size: 36px
+		text-transform: uppercase
+		padding-bottom: 5px
+		display: block
+	&__title
+		font-size: 26px
+		color: #000
+		text-transform: uppercase
+		padding-bottom: 10px
+	&__list
+	&__item
+		font-size: 20px
+		color: #000
+		padding-bottom: 10px
+		b
+			font-weight: normal
+			color: #7d481e
+	&__right
+		width: 60%
+		float: right
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__bottom
+		float: left
+		width: 100%
+		clear: both
+		padding-top: 30px
+		p
+			font-size: 19px
+			color: #000
+			line-height: 27px
+	&__button
+		text-align: right
+		clear: both
+		width: 100%
+		float: left
+		padding-top: 16px
+
+.p-aboutlist
+	&__item
+		display: block
+		width: 100%
+		border-bottom: 1px solid #7f7f7f
+		position: relative
+		margin-bottom: 10px
+	&__link
+		font-size: 20px
+		color: #000
+		padding-bottom: 8px
+		padding-top: 8px
+		display: block
+		&:hover
+			text-decoration: none
+			color: #ba2e17
+			&::after
+				height: 3px
+				content: ''
+				left: 0
+				right: 0
+				bottom: -1px
+				z-index: 1
+				display: block
+				background-color: #ba2e17
+				position: absolute
+		&:focus, &:active
+			text-decoration: none
+			color: #000
+	.active
+		.p-aboutlist__link
+			color: #ba2e17
+			&::after
+				height: 3px
+				content: ''
+				left: 0
+				right: 0
+				bottom: -1px
+				z-index: 1
+				display: block
+				background-color: #ba2e17
+				position: absolute

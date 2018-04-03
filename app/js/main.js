@@ -7,6 +7,8 @@ $('.p-indexslider').owlCarousel({
 	autoplayHoverPause:true
 })
 $(function() {
+
+	$('.p-select').selectmenu();
 	
 	var opw = $('.p-ourprod__item').width();
 	$('.p-ourprod__item').height(opw);

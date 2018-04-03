@@ -66,3 +66,36 @@ ol, ul
 	.active
 		border-color: #ce031b !important
 		background-color: #ce031b !important
+
+.ui-selectmenu-button.ui-button
+	width: 260px
+	border-radius: 0
+	border: none
+	height: 38px
+	padding: 0 40px 0 18px
+	background-color: #fff
+	position: relative
+	outline: none !important
+	&::after
+		width: 16px
+		background-image: url(../img/bottom-arrow.svg)
+		content: ''
+		position: absolute
+		right: 12px
+		background-repeat: no-repeat
+		background-position: center center
+		top: 0
+		bottom: 0
+.ui-selectmenu-text
+	margin-right: 0
+	line-height: 38px
+	font-family: "FiraSansExtraCondensedRegular", sans-serif
+	font-size: 19px
+	color: #000
+.ui-button .ui-icon
+	display: none
+
+.ui-selectmenu-button-open
+	&::after
+		transform: rotate(180deg) !important
+		-webkit-transform: rotate(180deg) !important
