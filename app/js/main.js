@@ -24,11 +24,23 @@ $(function() {
 		return false;
 	});
 
+	$('.p-search__mob').on('click', function() {
+		$(this).parent().children('.p-search').fadeToggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.p-search').length) return;
+				$('.p-search').fadeOut();
+				event.stopPropagation();
+			});
+		return false;
+	});
+
 	$('.h-catnav__button').on('click', function() {
 		$(this).parent().children('.h-catnav').slideToggle();
+		$(this).toggleClass('open');
 		$(document).click(function(event) {
 			if ($(event.target).closest('.h-catnav').length) return;
 				$('.h-catnav').slideUp();
+				$('.h-catnav__button').removeClass('open');
 				event.stopPropagation();
 			});
 		return false;

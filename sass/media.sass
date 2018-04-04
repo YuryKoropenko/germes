@@ -9,6 +9,14 @@
 @media only screen and (max-width : 1140px)
 	.header__h-right
 		margin-left: -50px
+	.p-prod
+		width: 445px
+	.p-prod__left
+		width: 48%
+	.p-prod__right
+		width: 52%
+	.p-select__label
+		margin-right: 14px
 	/**/
 
 
@@ -71,6 +79,53 @@
 	.f-create, .f-copy
 		line-height: 1.2
 		margin-top: 35px
+	.p-search__mob
+		width: 54px
+		height: 38px
+		position: relative
+		svg
+			fill: #fff
+			width: 24px
+			position: absolute
+			left: 0
+			right: 0
+			margin: 0 auto
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+	.p-search
+		position: absolute
+		top: 100%
+		left: 15px
+		width: 432px
+		margin-top: 22px
+		display: none
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 30px
+			top: -20px
+			border: 20px solid transparent
+			border-bottom: 20px solid #e7ddcc
+			border-left: 20px solid #e7ddcc
+		.h-search__input
+			background-color: #e7ddcc
+			height: 68px
+		.h-search__btn
+			svg
+				fill: #be3d27
+				width: 24px
+	.page__section-sort
+		position: relative
+	.p-prod
+		width: 100%
+		padding: 0 18px
+	.page__p-prod
+		display: block
+	.p-prod__left,
+	.p-prod__right
+		width: 50%
 	/**/
 
 
@@ -212,6 +267,12 @@
 			outline: none
 			color: #000
 			text-decoration: none
+	.header__h-catnav
+		.open
+			svg
+				transform: rotate(-180deg)
+				-webkit-transform: rotate(-180deg)
+
 	.owl-nav
 		display: none
 	.p-indexslider__item
@@ -284,6 +345,37 @@
 	.p-indexslider__text
 		padding-left: 15px
 		padding-right: 15px
+	.p-sort__select
+		display: none
+	.p-sort__vid
+		display: none
+	.p-search
+		width: auto
+		left: 0
+		right: 0
+		.h-search__btn
+			right: 18px
+		.h-search__input
+			padding-right: 90px
+	.p-search::after
+		left: 40px
+	.p-prod__left
+		margin-bottom: 14px
+		width: 100%
+	.p-prod__right
+		width: 100%
+	.p-prod
+		margin-bottom: 60px
+		padding: 0
+	.p-prod__bottom
+		padding-top: 16px
+	.page__p-aboutlist
+		display: none
+	.page__p-content-right
+		padding-left: 0
+		text-align: center
+	.page__section-ab
+		padding-bottom: 80px
 
 
 
@@ -325,6 +417,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+	.p-search__mob
+		display: none
 	/**/
 
 

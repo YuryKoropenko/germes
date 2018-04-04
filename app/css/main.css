@@ -1037,12 +1037,17 @@ body {
   fill: #7d481e;
 }
 
+.p-select {
+  float: left;
+}
+
 .p-select__label {
   color: #fff;
   font-size: 19px;
   line-height: 38px;
   display: inline-block;
   margin-right: 24px;
+  float: left;
 }
 
 .p-pagin {
