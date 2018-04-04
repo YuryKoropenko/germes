@@ -243,6 +243,10 @@ body {
   flex-wrap: wrap;
 }
 
+.page__p-prod-block {
+  display: none;
+}
+
 .page__p-content-right {
   padding-left: 30px;
 }
@@ -1130,6 +1134,11 @@ body {
 .p-vid__link svg {
   height: 15px;
   fill: #fff;
+  opacity: .6;
+}
+
+.p-vid .active .p-vid__link svg {
+  opacity: 1;
 }
 
 .p-prod {
@@ -1205,6 +1214,27 @@ body {
   width: 100%;
   float: left;
   padding-top: 16px;
+}
+
+.p-prod__full {
+  width: 100% !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-prod__full .p-prod__right {
+  width: 440px;
+  float: left;
+}
+
+.p-prod__full .p-prod__left {
+  padding-right: 0;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .p-aboutlist__item {

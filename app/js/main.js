@@ -46,6 +46,21 @@ $(function() {
 		return false;
 	});
 
+	$('.p-vid__item-list a').on('click', function() {
+		$('.page__p-prod-block').hide();
+		$('.page__p-prod-list').show();
+		$('.p-vid__item').removeClass('active');
+		$(this).parent().addClass('active');
+		return false;
+	});
+	$('.p-vid__item-block a').on('click', function() {
+		$('.page__p-prod-list').hide();
+		$('.page__p-prod-block').show();
+		$('.p-vid__item').removeClass('active');
+		$(this).parent().addClass('active');
+		return false;
+	});
+
 	$('.p-mask').mask("+7(999) 999-99-99");
 
 });

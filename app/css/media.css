@@ -474,6 +474,12 @@
   .page__section-ab {
     padding-bottom: 80px;
   }
+  .page__p-prod-list {
+    display: none !important;
+  }
+  .page__p-prod-block {
+    display: block !important;
+  }
   /**/
 }
 

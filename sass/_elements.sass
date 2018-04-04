@@ -604,6 +604,11 @@
 		svg
 			height: 15px
 			fill: #fff
+			opacity: .6
+	.active
+		.p-vid__link
+			svg
+				opacity: 1
 
 .p-prod
 	@include clearfix
@@ -654,6 +659,21 @@
 		width: 100%
 		float: left
 		padding-top: 16px
+	&__full
+		width: 100% !important
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		.p-prod__right
+			width: 440px
+			float: left
+		.p-prod__left
+			padding-right: 0
+			padding-left: 20px
+			width: 100%
 
 .p-aboutlist
 	&__item
