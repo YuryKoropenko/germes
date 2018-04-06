@@ -713,3 +713,105 @@
 				display: block
 				background-color: #ba2e17
 				position: absolute
+
+.p-card
+	&__left
+		width: 428px
+		&-link
+			display: block
+			outline: none
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__right
+		width: 658px
+	&__list
+	&__item
+		@include clearfix
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-content: stretch
+		-ms-flex-line-pack: stretch
+		align-content: stretch
+		-webkit-align-items: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+		&:nth-child(even)
+			background-color: #e7ddcc
+	&__har
+		padding: 9px 0 9px 60px
+		position: relative
+		font-size: 20px
+		width: 44%
+		float: left
+		color: #7e3500
+		&::after
+			content: ''
+			display: block
+			width: 1px
+			top: 6px
+			bottom: 6px
+			background-color: #885a3a
+			position: absolute
+			right: 0
+	&__icon
+		width: 44px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		left: 0
+		bottom: 0
+		top: 0
+		svg
+			fill: #7e3500
+	&__sv
+		width: 56%
+		float: right
+		font-size: 20px
+		padding: 9px 0 9px 20px
+
+.p-prev
+	text-transform: uppercase
+	line-height: 32px
+	color: #000
+	font-size: 20px
+	padding-left: 28px
+	position: relative
+	&:hover, &:focus, &:active
+		color: #000
+		text-decoration: none
+	svg
+		height: 20px
+		fill: #7b4922
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -10px
+
+.p-next
+	text-transform: uppercase
+	line-height: 32px
+	color: #000
+	font-size: 20px
+	padding-right: 28px
+	position: relative
+	&:hover, &:focus, &:active
+		color: #000
+		text-decoration: none
+	svg
+		height: 20px
+		fill: #7b4922
+		position: absolute
+		right: 0
+		top: 50%
+		margin-top: -10px
